@@ -1,0 +1,68 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    font-family: cairo-regular;
+}
+
+@font-face {
+    font-family: cairo-bold;
+    src: url(./fonts/Cairo-Bold.ttf);
+}
+
+@font-face {
+    font-family: cairo-regular;
+    src: url(./fonts/Cairo-Regular.ttf);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #fff;
+    width: 30%;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form input {
+    padding: 3px 8px;
+}
+
+.alert-danger, .error {
+    padding: 5px 26px;
+    background-color: rgba(244, 37, 37, 0.688);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 7px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #111;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dash  {
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.dash table {
+    width: 100%;
+}
+
