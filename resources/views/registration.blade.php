@@ -23,19 +23,19 @@
             @endif
     
             @if ($message = Session::get('error'))
-                <div>{{ $message }}</div><br />
+                <div>{{ $message }}</div>
             @endif
     
             <label for="email">Nom d'utilisateur</label>
             <input type="text" name="name" id="name" placeholder="Saisir le nom ici ...">
     
             <label for="email">Email</label><br />
-            <input type="text" name="email" id="email" placeholder="Saisir l'email ici ..."><br /><br />
+            <input type="text" name="email" id="email" placeholder="Saisir l'email ici ...">
     
-            <label for="password">Mot de passe</label><br />
+            <label for="password">Mot de passe</label>
             <input type="password" name="password" id="password" placeholder="Saisir le mot de passe ici ...">
             
-            <label for="passwordConfirm">Mot de passe</label><br />
+            <label for="passwordConfirm">Mot de passe</label>
             <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirmer le mot de passe ici ...">
     
             <a href="{{ route('login') }}">Se connecter</a>
